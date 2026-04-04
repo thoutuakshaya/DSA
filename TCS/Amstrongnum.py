@@ -2,7 +2,7 @@ import math
 
 n=input("enter a number").split()
 #it converts above to list
-if len(n)==1 and n[0].isdigit():
+if len(n)==1 and n.isdigit():
     #conversion of list element to number
     n=int(n[0])
     original=n
