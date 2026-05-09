@@ -1,15 +1,16 @@
 def removeDuplicates(arr,n):
-    i=0
     arr.sort()
     print(arr)
+    i=0
     for j in range(1,n-1):
-        if arr[i]==arr[j]:
+        if (arr[i]==arr[j]):
             continue
         else:
             i=i+1
             arr[i]=arr[j]
+            
+            
     return i+1
-
 
 
 if __name__=="__main__":
