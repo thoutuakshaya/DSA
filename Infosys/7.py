@@ -7,10 +7,10 @@ def find(s):
         k[s[i]]=k.get(s[i],0)+1
         if k[s[i]]==1:
             l+=1
-            m=max(l,m)
+            m=max(i-start+1,m)
         else:
-            while k[s[i]]==1:
-                k[s[i]]-=1
+            while k[s[i]]>1:
+                k[s[start]]-=1
                 start+=1
     return m
 
