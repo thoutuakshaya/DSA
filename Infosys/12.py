@@ -16,7 +16,7 @@ def mergesort(arr):
             merged.append(arr2[j])
             j+=1
             inversion+=len(arr1)-i
-    merged.extend(arr1[i:])
+    merged.extend(arr1[i:])#remaining elements to be merged that left after comparisions
     merged.extend(arr2[j:])
     return merged,inversion
 
